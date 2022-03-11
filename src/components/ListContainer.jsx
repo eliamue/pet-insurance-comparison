@@ -3,11 +3,12 @@ import ListItem from "./ListItem";
 import Header from "./Header";
 import data from "./data.js";
 import "../styles/List.css";
+import Footer from "./Footer";
 
 export default function ListContainer() {
   return (
     <div>
-      <header>
+      <header id="top">
         <Header />
       </header>
       <div className="main-container">
@@ -19,6 +20,9 @@ export default function ListContainer() {
           ))}
         </ul>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

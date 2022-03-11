@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import "../styles/Nav.css";
 
 export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <div className="navlinks">
+      <Link className="nav-a" to="/about">
+        About
+      </Link>
+      <HashLink to="#top">Back to Top</HashLink>
+    </div>
+  );
 }

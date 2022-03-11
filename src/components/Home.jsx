@@ -14,9 +14,6 @@ export default function Home() {
           Home!!
         </body>
       </div>
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }

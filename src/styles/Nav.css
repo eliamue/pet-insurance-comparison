@@ -1,0 +1,12 @@
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(20, 20, 65);
+    padding: 20px;
+}
+
+.nav-a {
+    font-size: 20px;
+    color: rgb(197, 194, 194);
+}
