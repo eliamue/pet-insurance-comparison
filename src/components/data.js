@@ -1,7 +1,7 @@
-export const data = [
+const data = [
     {
         name: "ASPCA",
-        cured_condition_eligible: "6 months",
+        cured_condition_eligible: "available after 6 months",
         dental: true,
         food: true,
         unique: "",
@@ -12,11 +12,13 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "$5000",
         quote: "$53",
-        signup_fee: "none"
+        signup_fee: "No",
+        website: "https://www.aspcapetinsurance.com/",
+        logo: "https://www.investopedia.com/thmb/Tjqfc_TaPjVQ9kSWD1fT32UKlXQ=/881x320/filters:no_upscale()/aphi_logo_higherquality-a81dcd001c0e41289c2d738620fd8580.png"
     },
     {
-        name: "Pet Plan",
-        cured_condition_eligible: "12 months",
+        name: "Fetch (formerly Pet Plan)",
+        cured_condition_eligible: "available after 12 months",
         dental: true,
         food: true,
         unique: "E-vet visits",
@@ -27,26 +29,30 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "$5000",
         quote: "$45",
-        signup_fee: "none"
+        signup_fee: "No",
+        website: "https://www.fetchpet.com/",
+        logo: "https://www.petinsurancequotes.com/app/uploads/2022/01/fetch-pet-insurance.png"
     },
     {
-        name: "PetWatch",
-        cured_condition_eligible: "N/A",
+        name: "24PetWatch",
+        cured_condition_eligible: false,
         dental: false,
         food: true,
         unique: "Discount if already a pre-existing customer with their microchip services",
         death_coverage: false,
         deductable: "$100",
-        cancellation: "None",
+        cancellation: "",
         reviews: "good",
         reimbursement_rate: "80%",
         reimbursement_max: "$5000",
         quote: "$46",
-        signup_fee: "none"
+        signup_fee: "No",
+        website: "https://www.24petwatch.com/pet-insurance",
+        logo: "https://www.petpoint.com/Portals/Petpoint/videos/thumbnails/24PetWatch-USA-Both.jpg"
     },
     {
         name: "Embrace",
-        cured_condition_eligible: "12 months",
+        cured_condition_eligible: "available after 12 months",
         dental: true,
         food: true,
         unique: "RX food covered via FSA",
@@ -57,11 +63,13 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "$5000",
         quote: "$62",
-        signup_fee: "$25"
+        signup_fee: "$25",
+        website: "https://www.embracepetinsurance.com/",
+        logo: "https://mma.prnewswire.com/media/1030205/Embrace_Logo.jpg?p=twitter"
     },
     {
         name: "Figo",
-        cured_condition_eligible: "Yes, but unknown timeframe",
+        cured_condition_eligible: "available after unknown timeframe",
         dental: false,
         food: false,
         unique: "Includes a full social media app and telehealth",
@@ -70,28 +78,32 @@ export const data = [
         cancellation: "30-day money-back guarantee",
         reviews: "good",
         reimbursement_rate: "90%",
-        reimbursement_max: "Unlimited",
+        reimbursement_max: "unlimited",
         quote: "$30",
-        signup_fee: "none"
+        signup_fee: "No",
+        website: "https://figopetinsurance.com/",
+        logo: "https://h1bdata.com/wp-content/uploads/2020/09/figo-pet-insurance-1601453872l8cp4.jpg"
     },
     {
         name: "Nationwide",
-        cured_condition_eligible: "6 months",
+        cured_condition_eligible: "available after 6 months",
         dental: false,
         food: true,
         unique: "Covers exotic pets, and provides e-vet visits",
         death_coverage: false,
         deductable: "$250",
-        cancellation: "None",
+        cancellation: "",
         reviews: "",
-        reimbursement_rate: "Fixed by specific diagnosis",
-        reimbursement_max: "Fixed by specific diagnosis",
+        reimbursement_rate: "fixed",
+        reimbursement_max: "fixed",
         quote: "$48",
-        signup_fee: "Unknown"
+        signup_fee: "",
+        website: "https://www.petinsurance.com/",
+        logo: "https://pbs.twimg.com/profile_images/1201889166881120257/lDBvc4AX_400x400.png"
     },
     {
-        name: "Pet First",
-        cured_condition_eligible: "Yes, but unknown timeframe",
+        name: "MetLife / Pet First",
+        cured_condition_eligible: "available after unknown timeframe",
         dental: false,
         food: false,
         unique: "",
@@ -102,11 +114,13 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "$5000",
         quote: "$38-$45",
-        signup_fee: "Unknown"
+        signup_fee: "",
+        website: "https://www.metlifepetinsurance.com/pet-insurance/",
+        logo: "https://www.rover.com/blog/wp-content/uploads/2020/10/PetFirst-Logo.jpg"
     },
     {
         name: "Spot",
-        cured_condition_eligible: "6 months",
+        cured_condition_eligible: "available after 6 months",
         dental: true,
         food: true,
         unique: "",
@@ -117,11 +131,13 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "$5000",
         quote: "$46",
-        signup_fee: "None"
+        signup_fee: "No",
+        website: "https://spotpetins.com/",
+        logo: "https://www.gatewaygreen.org/wp-content/uploads/2020/03/spot-pet-insurance-re-size1-675x478.png"
     },
     {
         name: "Healthy Paws",
-        cured_condition_eligible: "Unknown",
+        cured_condition_eligible: "unknown",
         dental: false,
         food: false,
         unique: "",
@@ -132,11 +148,13 @@ export const data = [
         reimbursement_rate: "70%",
         reimbursement_max: "Unlimited",
         quote: "$28",
-        signup_fee: "$25"
+        signup_fee: "$25",
+        website: "",
+        logo: ""
     },
     {
         name: "Trupanion",
-        cured_condition_eligible: "Unknown",
+        cured_condition_eligible: "unknown",
         dental: false,
         food: false,
         unique: "Pays directly",
@@ -147,11 +165,13 @@ export const data = [
         reimbursement_rate: "",
         reimbursement_max: "",
         quote: "",
-        signup_fee: "$35"
+        signup_fee: "$35",
+        website: "https://trupanion.com/",
+        logo: "https://www.logosvgpng.com/wp-content/uploads/2018/03/trupanion-pet-insurance-logo-vector.png"
     },
     {
         name: "TrustedPals",
-        cured_condition_eligible: "As soon as declared cured by vet, no wait time",
+        cured_condition_eligible: "available immediately once declared cured by vet with no wait period",
         dental: true,
         food: true,
         unique: "",
@@ -161,12 +181,14 @@ export const data = [
         reviews: "",
         reimbursement_rate: "100%",
         reimbursement_max: "$8000",
-        quote: "$52",
-        signup_fee: "$21"
+        quote: "$62",
+        signup_fee: "$21",
+        website: "https://www.trustedpals.com/",
+        logo: "https://www.croozi.com/upload/loc1024/1573918021location919.png"
     },
     {
         name: "Pumpkin",
-        cured_condition_eligible: "6 months",
+        cured_condition_eligible: "available after 6 months",
         dental: true,
         food: true,
         unique: "",
@@ -177,11 +199,13 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "$7000",
         quote: "$58",
-        signup_fee: "None"
+        signup_fee: "No",
+        website: "https://www.pumpkin.care/",
+        logo: "https://images.ctfassets.net/ub3bwfd53mwy/6EiHOghYFWEl0h7dPuarL8/b447517fa4f69f40a65e4707129d9899/Pumpkin_logo.jpeg?w=750"
     },
     {
         name: "Prudent Pet",
-        cured_condition_eligible: "Unknown",
+        cured_condition_eligible: "unknown",
         dental: true,
         food: false,
         unique: "No covereage for traveling veterinary/any house calls",
@@ -192,11 +216,13 @@ export const data = [
         reimbursement_rate: "90%",
         reimbursement_max: "Unlimited",
         quote: "$48",
-        signup_fee: ""
+        signup_fee: "",
+        website: "https://www.prudentpet.com/",
+        logo: "https://scontent.ffcm1-1.fna.fbcdn.net/v/t1.6435-9/106474377_2545944645667561_7798983690345535979_n.png?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=R4MubsGgEcEAX9kdh-5&_nc_ht=scontent.ffcm1-1.fna&oh=00_AT_bMy_cQZMN_Go36HQfDC8_4gE7i7FTQlksdTL2joElIQ&oe=624F3FC7"
     },
     {
         name: "Pets Best",
-        cured_condition_eligible: "None",
+        cured_condition_eligible: false,
         dental: false,
         food: false,
         unique: "",
@@ -207,6 +233,10 @@ export const data = [
         reimbursement_rate: "",
         reimbursement_max: "",
         quote: "",
-        signup_fee: ""
-    }0
+        signup_fee: "",
+        website: "https://www.petsbest.com/",
+        logo: "https://imageserver.petsbest.com/marketing/blog/PetsBest_Logo_470x174.jpg"
+    }
 ]
+
+export default data;

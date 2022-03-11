@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Form from './components/Form';
 import ItemDetail from './components/ItemDetail';
+import ListContainer from './components/ListContainer';
 import About from './components/About';
 import "./styles/App.css";
 
@@ -13,7 +14,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add" element={<Form />} />
-        <Route path="/:id" element={<ItemDetail/>} />
+          <Route path="/list" element={<ListContainer/>} />
+        <Route path="/list/:id" element={<ItemDetail/>} />
         <Route path="/about" element={<About/>} />
         </Routes>
       </BrowserRouter>
