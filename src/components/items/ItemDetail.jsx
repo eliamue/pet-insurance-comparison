@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useOneItem } from "../../hooks/useOneItem";
+import { HashLink } from 'react-router-hash-link';
 import dentalimg from "../assets/dental.png";
 import foodimg from "../assets/food.png";
 
@@ -69,6 +71,9 @@ const ItemDetail = () => {
           )}
         </section>
       </figure>
+      <HashLink to={`/list/#${item.id}`}>
+        Back to list
+      </HashLink>
     </>
   );
 };
