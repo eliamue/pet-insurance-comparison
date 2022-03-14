@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
-import { fetchOneItem } from "../services/services";
+import { fetchOneCompany } from "../services/services";
 
-export const useOneItem = (id) => {
-    const [item, setItem] = useState({});
+export const useOneCompany = (id) => {
+    const [loading, setLoading] = useState(true);
+    const [company, setCompany] = useState({});
   
     useEffect(() => {
-      fetchOneItem(id)
-        .then(res => setItem(res));
+      fetchOneCompany(id)
+        .then(res => setCompany(res))
+        .finally(() => setLoading(false));
     }, [id]);
-    console.log("useOneItem hook", item)
-    return { item };
+
+    return { loading, company };
   };
