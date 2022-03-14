@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
 import "../styles/Home.css";
 
 export default function Home() {
@@ -10,9 +9,9 @@ export default function Home() {
         <Header />
       </header>
       <div>
-        <body>
+        <main>
           Home!!
-        </body>
+        </main>
       </div>
     </div>
   );
