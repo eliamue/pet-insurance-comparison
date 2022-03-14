@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useCreate = () => {
+export const useCreateItem = () => {
   const [title, setTitle] = useState('');
   const [quote, setQuote] = useState('');
   const [cured, setCured] = useState('');

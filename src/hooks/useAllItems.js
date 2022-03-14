@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { fetchAllCompanies } from "../services/services";
+import { fetchAllItems } from "../services/services";
 
-export const useAllCompanies = () => {
+export const useAllItems = () => {
   const [loading, setLoading] = useState(true);
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
-    fetchAllCompanies()
+    fetchAllItems()
       .then((res) => setCompanies(res))
       .finally(() => setLoading(false));
   }, []);

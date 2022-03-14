@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { updateCompany } from "../services/services";
+import { updateItem } from "../services/services";
 
-export const useUpdate = (id) => {
+export const useUpdateItem = (id) => {
   const [loading, setLoading] = useState(true);
   const [title, setTitle] = useState('');
   const [quote, setQuote] = useState('');
@@ -20,7 +20,7 @@ export const useUpdate = (id) => {
   const [fee, setFee] = useState('');
 
   useEffect(() => {
-    updateCompany(id)
+    updateItem(id)
       .then((company) => {
         setTitle(company.title);
         setQuote(company.quote);

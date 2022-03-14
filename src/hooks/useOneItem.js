@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { fetchOneCompany } from "../services/services";
+import { fetchOneItem } from "../services/services";
 
-export const useOneCompany = (id) => {
+export const useOneItem = (id) => {
     const [loading, setLoading] = useState(true);
     const [company, setCompany] = useState({});
   
     useEffect(() => {
-      fetchOneCompany(id)
+      fetchOneItem(id)
         .then(res => setCompany(res))
         .finally(() => setLoading(false));
     }, [id]);

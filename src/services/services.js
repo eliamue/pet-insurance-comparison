@@ -2,7 +2,7 @@ import request from 'superagent';
 
 const URL = "https://pet-insurance-comparison.herokuapp.com/api/v1/companies";
 
-export const createCompany = async (data) => {
+export const createItem = async (data) => {
   try {
     const res = await fetch(`${URL}`, {
       method: "POST",
@@ -55,7 +55,7 @@ export const createCompany = async (data) => {
   }
 };
 
-export const fetchAllCompanies = async () => {
+export const fetchAllItems = async () => {
   try {
     const res = await fetch(`${URL}`);
 
@@ -84,7 +84,7 @@ export const fetchAllCompanies = async () => {
 };
 
 
-export const fetchOneCompany = async (companyId) => {
+export const fetchOneItem = async (companyId) => {
   try {
     const res = await fetch(
       `${URL}/${companyId}`
@@ -131,7 +131,7 @@ export const fetchOneCompany = async (companyId) => {
   }
 };
 
-export const updateCompany = async (companyId, updatedCompany) => {
+export const updateItem = async (companyId, updatedCompany) => {
   const res = await fetch(
     `${URL}/${companyId}`,
     {
@@ -145,7 +145,7 @@ export const updateCompany = async (companyId, updatedCompany) => {
   return res.json();
 };
 
-export async function deleteCompany(companyId) {
+export async function deleteItem(companyId) {
   const { body } = await request.delete(
     `${URL}/${companyId}`
   );
