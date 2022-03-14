@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { PropTypes } from 'prop-types';
 
 const ListItem = ({
@@ -12,7 +13,9 @@ const ListItem = ({
 }) => (
   <div className="item-container">
     <h2 className="title">{title}</h2>
+    <Link to={`/${id}`}>
     <img src={logo} className="logo" alt={title} />
+    </Link>
     <div className="uniquetrait">{uniquetrait ? `${uniquetrait}` : ""}</div>
     <div className="reimbursement">
       {rerate !== "fixed"

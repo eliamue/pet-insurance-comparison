@@ -43,3 +43,15 @@
 .dental-img, .food-img {
     height: 200px;
 }
+
+.food-dental-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.rx-food, .dental-covered {
+    display: flex;
+    flex-direction: column;
+}

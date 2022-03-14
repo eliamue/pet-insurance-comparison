@@ -8,7 +8,7 @@ const ItemDetail = () => {
   const { id } = useParams();
   const { loading, item } = useOneItem(id);
 
-if (loading) return <div>Loading...</div>;
+  if (loading) return <div>Loading...</div>;
 
   return (
     <>
@@ -35,33 +35,42 @@ if (loading) return <div>Loading...</div>;
             ? `My monthly quote for best bang-for-buck coverage was ${item.quote}`
             : ""}
         </div>
-        <div className="fee">
-          {item.fee ? `${item.fee} signup fee` : ""}
-        </div>
+        <div className="fee">{item.fee ? `${item.fee} signup fee` : ""}</div>
         <div className="reimbursement">
           {item.rerate !== "fixed"
             ? `${item.rerate} reimbursement with a max annual payout of ${item.remax} after a ${item.deductable} deductable`
             : `Reimbursement rate is fixed per each specific diagnosis, after a ${item.deductable} deductable`}
         </div>
-        {item.dental ? (
-          <img className="dental-img" src={dentalimg} alt="dental coverage" />
-        ) : (
-          ""
-        )}
+        <section className="food-dental-container">
+          {item.dental ? (
+            <div className="dental-covered">
+              <img
+                className="dental-img"
+                src={dentalimg}
+                alt="dental coverage"
+              />
+              Dental is covered
+            </div>
+          ) : (
+            ""
+          )}
 
-        {item.food ? (
-          <img
-            className="food-img"
-            src={foodimg}
-            alt="prescription food coverage"
-          />
-        ) : (
-          ""
-        )}
+          {item.food ? (
+            <div className="rx-food">
+              <img
+                className="food-img"
+                src={foodimg}
+                alt="prescription food coverage"
+              />
+              Prescription food is covered
+            </div>
+          ) : (
+            ""
+          )}
+        </section>
       </figure>
     </>
   );
 };
-
 
 export default ItemDetail;
