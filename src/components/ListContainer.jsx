@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import List from "./List.jsx";
-import data from "./data.js";
+import { useAllItems } from '../hooks/useAllItems';
 import "../styles/List.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
 const ListContainer = () => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    const loadData = async () => {
-      const loadedData = await data;
-      setItems(loadedData);
-    };
-    loadData();
-  });
+  const { items } = useAllItems();
 
   return (
     <div>

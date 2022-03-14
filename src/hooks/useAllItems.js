@@ -3,13 +3,13 @@ import { fetchAllItems } from "../services/services";
 
 export const useAllItems = () => {
   const [loading, setLoading] = useState(true);
-  const [companies, setCompanies] = useState([]);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     fetchAllItems()
-      .then((res) => setCompanies(res))
+      .then((res) => setItems(res))
       .finally(() => setLoading(false));
   }, []);
 
-  return { loading, companies };
+  return { loading, items };
 };
