@@ -1,9 +1,9 @@
 import React from "react";
-import List from "./List.jsx";
+import List from "../components/items/List";
 import { useAllItems } from '../hooks/useAllItems';
 import "../styles/List.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const ListContainer = () => {
   const { items } = useAllItems();

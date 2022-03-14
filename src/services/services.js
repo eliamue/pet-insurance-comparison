@@ -15,7 +15,7 @@ export const createItem = async (data) => {
 
     const {
       id,
-      name,
+      title,
       website,
       logo,
       quote,
@@ -23,7 +23,7 @@ export const createItem = async (data) => {
       cured,
       fee,
       deductable,
-      unique,
+      uniquetrait,
       reviews,
       cancellation,
       remax,
@@ -34,7 +34,7 @@ export const createItem = async (data) => {
 
     return {
       id,
-      name,
+      title,
       website,
       logo,
       quote,
@@ -42,7 +42,7 @@ export const createItem = async (data) => {
       cured,
       fee,
       deductable,
-      unique,
+      uniquetrait,
       reviews,
       cancellation,
       remax,
@@ -62,7 +62,7 @@ export const fetchAllItems = async () => {
     const companies = await res.json();
     return companies.map((item) => ({
       id: item.id,
-      name: item.name,
+      name: item.title,
       website: item.website,
       logo: item.logo,
       quote: item.quote,
@@ -70,7 +70,7 @@ export const fetchAllItems = async () => {
       cured: item.cured,
       fee: item.fee,
       deductable: item.deductable,
-      unique: item.unique,
+      uniquetrait: item.uniquetrait,
       reviews: item.reviews,
       cancellation: item.cancellation,
       remax: item.remax,
@@ -91,7 +91,7 @@ export const fetchOneItem = async (companyId) => {
     );
     const {
       id,
-      name,
+      title,
       website,
       logo,
       quote,
@@ -99,7 +99,7 @@ export const fetchOneItem = async (companyId) => {
       cured,
       fee,
       deductable,
-      unique,
+      uniquetrait,
       reviews,
       cancellation,
       remax,
@@ -107,10 +107,10 @@ export const fetchOneItem = async (companyId) => {
       dental,
       food,
     } = await res.json();
-
+    
     return {
       id,
-      name,
+      title,
       website,
       logo,
       quote,
@@ -118,7 +118,7 @@ export const fetchOneItem = async (companyId) => {
       cured,
       fee,
       deductable,
-      unique,
+      uniquetrait,
       reviews,
       cancellation,
       remax,
