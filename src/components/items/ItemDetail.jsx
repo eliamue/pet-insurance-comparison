@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useOneItem } from "../../hooks/useOneItem";
 import { HashLink } from 'react-router-hash-link';
