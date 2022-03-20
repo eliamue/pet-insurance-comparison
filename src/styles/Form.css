@@ -1,0 +1,128 @@
+.form-container {
+    align-items: center;
+    color: gray;
+}
+
+input[type="radio"], .clear-selected-button {
+    list-style-type: none;
+    appearance: none;
+}
+
+.add-header {
+    margin-top: 100px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px;
+}
+
+.form-section, .prompt {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+.options {
+    margin: 10px;
+}
+
+.required {
+    color: red;
+    font-size: 12px;
+}
+
+.submit-btn {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+input, textarea, select {
+    border-radius: 5px;
+    background-color: rgb(94, 89, 118);
+    height: fit-content;
+    max-width: 500px;
+    min-width: 300px;
+    color: rgb(215, 208, 208);
+}
+
+input::placeholder, textarea::placeholder, select::placeholder, option::placeholder {
+    color: rgb(144, 141, 164);
+    text-align: center;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown-container {
+    background-color: rgb(94, 89, 118);
+    width: 250px;
+    text-align: left;
+    justify-self: left;
+    justify-content: left;
+    justify-items: left;
+}
+
+.rmsc, .dropdown-container, .rmsc multi-select {
+    --rmsc-bg: rgb(94, 89, 118);
+    color: rgb(176, 175, 175);
+    padding: 0;
+    text-align: left;
+    justify-self: left;
+    justify-content: left;
+    justify-items: left;
+    list-style-type: none;
+    appearance: none;
+}
+
+.rmsc * {
+    padding: 2px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    max-width: 380px;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    appearance: none;
+    overflow: visible;
+}
+
+.rmsc:selected {
+    border-radius: 20px;
+}
+
+.dropdown-heading-dropdown-arrow:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+    .options-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  textarea {
+      min-height: 100px;
+  }

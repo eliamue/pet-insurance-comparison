@@ -2,7 +2,7 @@ import React from "react";
 import List from "../components/items/List";
 import { useAllItems } from '../hooks/useAllItems';
 import "../styles/List.css";
-import Header from "../components/Header";
+import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
 const ListContainer = () => {
@@ -11,7 +11,7 @@ const ListContainer = () => {
   return (
     <div>
       <header id="top">
-        <Header />
+        <Nav />
       </header>
       <List items={items} />
       <footer>

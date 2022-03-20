@@ -39,6 +39,7 @@ export const useUpdateItem = (id) => {
       })
       .finally(() => setLoading(false));
   }, [id]);
+  
   const handleTitle = ({ target }) => {
     setTitle(target.value);
   };

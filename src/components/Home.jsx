@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./Header";
+import Nav from "./Nav";
 import "../styles/Home.css";
 
 export default function Home() {
   return (
     <div>
       <header>
-        <Header />
+        <Nav />
       </header>
       <div>
         <main>
