@@ -15,6 +15,7 @@ export default class Nav extends React.Component {
       <Menu width="25vmin">
         <HashLink id="home" className="menu-item" to={"/"}>Home</HashLink>
         <HashLink id="list" className="menu-item" to={"/list"}>List</HashLink>
+        <HashLink id="chart" className="menu-item" to={"/chart"}>Comparison Chart</HashLink>
         <HashLink id="about" className="menu-item" to={"/about"}>About</HashLink>
       </Menu>
     );

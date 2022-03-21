@@ -16,11 +16,10 @@
     justify-self: center;
     justify-items: center;
     text-align: center;
-
 }
 
 .item-li {
-    max-width: 700px;
+    max-width: 500px;
     margin: 30px;
     padding: 15px;
     background-color: rgb(36, 52, 57);

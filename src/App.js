@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import Form from "./components/Form";
+import ChartContainer from "./containers/ChartContainer";
 import DetailContainer from "./containers/DetailContainer";
 import ListContainer from "./containers/ListContainer";
 import About from "./components/About";
@@ -15,6 +16,7 @@ export default function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/add" element={<Form />} />
           <Route exact path="/list" element={<ListContainer />} />
+          <Route exact path="/chart" element={<ChartContainer />} />
           <Route exact path="/:id" element={<DetailContainer />} />
           <Route exact path="/about" element={<About />} />
         </Routes>

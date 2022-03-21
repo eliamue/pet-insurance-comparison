@@ -62,7 +62,7 @@ export const fetchAllItems = async () => {
     const companies = await res.json();
     return companies.map((item) => ({
       id: item.id,
-      name: item.title,
+      title: item.title,
       website: item.website,
       logo: item.logo,
       quote: item.quote,
