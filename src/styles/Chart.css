@@ -2,6 +2,16 @@
   text-align: center;
   width: 100%;
   padding: 50px;
+  background-color: rgb(99, 99, 121);
+}
+
+.chart-page {
+  background-color: rgb(99, 99, 121);
+}
+
+.container-header {
+  color: white;
+  margin-left: 5vw;
 }
 
 .item-row {
@@ -15,6 +25,11 @@
   padding: 5px 0px;
 }
 
+.chart-holder {
+  margin-left: 6vw;
+  background-color: rgb(99, 99, 121);
+}
+
 .chart-header {
   height: 70px;
   padding-bottom: 20px;
@@ -25,9 +40,10 @@
 }
 
 .headers-row {
-  width: 1031px;
-  border: rgb(230, 229, 229) 2px solid;
-  background-color: rgb(24, 24, 26);
+  width: 1040px;
+  background-color: rgba(99, 99, 121, 0.838);
+  padding-left: 6vw;
+  padding-top: 5px;
 }
 
 #item-title {

@@ -5,13 +5,15 @@ import ChartItem from "./ChartItem";
 
 export default function Chart({ items }) {
   return (
-    <div>
+    <div className="full-chart">
       <Nav />
-      <header>
-        <h1>Coverage and Cost Comparison Chart</h1>
-      </header>
-      <div>
+      <div className="chart-page">
         <Container className="chart-container">
+        <header className="container-header">
+          <h1 className="container-header">
+            Coverage and Cost Comparison Chart
+          </h1>
+        </header>
           <Row className="headers-row">
             <Col id="title-header" className="chart-header">
               Company
@@ -38,11 +40,13 @@ export default function Chart({ items }) {
               Cancellation Policy
             </Col>
           </Row>
-          {items.map((item) => (
-            <Row className="chart-item-li" id={item.id} key={item.id}>
-              <ChartItem {...item} />
-            </Row>
-          ))}
+          <div className="chart-holder">
+            {items.map((item) => (
+              <Row className="chart-item-li" id={item.id} key={item.id}>
+                <ChartItem {...item} />
+              </Row>
+            ))}
+          </div>
         </Container>
       </div>
     </div>
