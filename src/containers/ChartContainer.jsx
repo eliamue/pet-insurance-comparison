@@ -1,5 +1,5 @@
 import React from "react";
-import Chart from "../components/Chart";
+import Chart from "../components/chart/Chart";
 import { useAllItems } from '../hooks/useAllItems';
 import "../styles/Chart.css";
 import Nav from "../components/Nav";
