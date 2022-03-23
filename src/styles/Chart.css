@@ -2,11 +2,11 @@
   text-align: center;
   width: 100%;
   padding: 50px;
-  background-color: rgb(99, 99, 121);
+  background-color: rgb(20, 20, 26);
 }
 
 .chart-page {
-  background-color: rgb(99, 99, 121);
+  background-color: rgb(20, 20, 26);
 }
 
 .container-header {
@@ -27,7 +27,7 @@
 
 .chart-holder {
   margin-left: 6vw;
-  background-color: rgb(99, 99, 121);
+  background-color: rgb(20, 20, 26);
 }
 
 .chart-header {
@@ -41,7 +41,7 @@
 
 .headers-row {
   width: 1040px;
-  background-color: rgba(99, 99, 121, 0.838);
+  background-color: rgb(20, 20, 26);
   padding-left: 6vw;
   padding-top: 5px;
 }
